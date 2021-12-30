@@ -4,5 +4,26 @@ body {
 }
 
 a {
-  color: #00B7FF;
+  color: black;
 }
+
+button {
+  padding: 12px 6px;
+  border-radius: 12px;
+  background-color: inherit;
+  border: 1px solid black;
+}
+
+.message {
+  border-top: 1px solid black
+}
+
+.message:first-of-type {
+  border: none;
+}
+
+.message-user {
+  border-bottom: 1px solid lightgrey;
+  width: 50%;
+}
+

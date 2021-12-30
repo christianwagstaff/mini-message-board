@@ -3,3 +3,10 @@ extends layout
 block content
   h1= title
   p Welcome to #{title}
+  button
+    a(href="/new") Create New Message
+  div(class='message-container') 
+    each message in messages 
+      div(class="message")
+        h2(class='message-user')= message.user
+        p= message.text
