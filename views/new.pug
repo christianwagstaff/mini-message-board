@@ -1,9 +1,10 @@
 extends layout 
 
 block content
-    form(method="POST" action="/new")
+    h1 New Message
+    form(method="POST" action="/new" id='newMessageForm')
         label(for="text")= "Message: "
-        textarea(name='text', required='true')
+        textarea(name='text' required='true')
         label(for='name')= "Username: "
-        input(type='text', name='name', required='true')
-        input(type="submit", value="submit")
+        input(type='text' name='name' required='true')
+        input(type="submit" value="submit")
